@@ -9,6 +9,7 @@ body{
 #titulo{
 	background-image: url(../img/sobre-background.jpg);
 	padding: 10px;
+	font-size: 24px;
 }
 
 h2{
@@ -18,7 +19,14 @@ h2{
 
 p{
 	padding: 0 45px;
+	margin: 20px;
 	text-indent: 15px;
+	line-height: 120%;
+}
+
+ul{
+	line-height: 150%;
+	list-style-type: disc;
 }
 
 figure{
