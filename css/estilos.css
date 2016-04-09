@@ -138,14 +138,22 @@ footer{
 	padding: 20px 0;
 }
 
+footer img[src*="logo-rodape"]{
+	display: inline;
+}
+
+footer ul{
+	display: inline;
+}
+
 footer .container{
 	position: relative;
 }
 
 .social{
 	position: absolute;
-	top: 12px;
 	right: 0;
+	vertical-align: top;
 }
 
 .social li{
@@ -176,4 +184,35 @@ footer .container{
 body{
 	color: #333333;
 	font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+}
+
+.menu-opcoes a:hover{
+	color: #007dc6;
+}
+
+.menu-opcoes a:active{
+	color: #867dc6;
+}
+
+.menu-departamentos li ul{
+	display: none;
+}
+
+.menu-departamentos li:hover ul{
+	display: block;
+}
+
+.menu-departamentos ul ul li{
+	background-color: #dcdcdc;
+}
+
+.menu-departamentos li li a:before{
+	content: '\272A';
+	padding-right: 3px;
+}
+
+.painel h2:before{
+	content: '\2756';
+	padding-right: 5px;
+	opacity: 0.4;
 }
