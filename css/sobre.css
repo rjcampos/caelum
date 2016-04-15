@@ -9,7 +9,7 @@ h2{
 	margin-top: 30px;
 }
 
-p{
+p:not(.sacola){
 	padding: 0 45px;
 	margin: 20px;
 	text-indent: 15px;
@@ -57,14 +57,7 @@ figcaption{
 	margin: 0 0 10px 10px;
 }
 
-p:first-letter{
+p:first-letter:not(.sacola){
 	font-weight: bold;
 }
 
-h1 + p{
-	text-indent: 0;
-}
-
-:not(p) + p:first-line{
-	font-variant: small-caps;
-}

@@ -14,40 +14,9 @@
 	<!-- Fim do head -->
 	<!-- Início do body -->
 	<body>
-		<!-- Início do cabeçalho -->
-		<header class="container">
-			<!-- Script para fazer o HTML5 funcionar no IE8 -->
-			<!--[if lt IE 9]>
-				<script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
-			<![endif]-->
-			<h1>
-				<img src="img/logo.png" alt="Mirror Fashion" />
-			</h1>
-			
-			<p class="sacola">Nenhum item na sacola de compras</p>
-			<!-- Início do menu -->
-			<nav class="menu-opcoes">
-				<ul>
-					<li>
-						<a href="#">Sua Conta</a>
-					</li>
-					<li>
-						<a href="#">Lista de Desejos</a>
-					</li>
-					<li>
-						<a href="#">Cartão Fidelidade</a>
-					</li>
-					<li>
-						<a href="sobre.html">Sobre</a>
-					</li>
-					<li>
-						<a href="#">Ajuda</a>
-					</li>
-				</ul>
-			</nav>
-			<!-- Fim do menu -->
-		</header>
-		<!-- Fim do cabeçalho -->
+		<?php
+			include("cabecalho.php");
+		?>
 		<div class="container">
 			<!-- Início do texto -->
 			<article>
@@ -57,7 +26,7 @@
 
 					<p>
 						A <strong>Mirror Fashion</strong> é a maior empresa comércio eletrônico no segmento de moda em todo o mundo. 
-						Fundada em 1932, possui filiais em 124 países, sendo líder de mercado com mais de 90% de 
+						Fundada há <?php print (date("Y") - 1932); ?> anos, possui filiais em 124 países, sendo líder de mercado com mais de 90% de 
 						participação em 118 deles.
 					</p>
 
@@ -72,7 +41,7 @@
 					</figure>
 
 					<p>
-						Compre suas roupas e acessórios na <strong>Mirror Fashion</strong>. Acesse <a href="index.html">nossa loja</a> ou entre em contato 
+						Compre suas roupas e acessórios na <strong>Mirror Fashion</strong>. Acesse <a href="index.php">nossa loja</a> ou entre em contato 
 						se tiver dúvidas. Conheça também nossa <a href="#historia">história</a> e nossos <a href="#diferenciais">diferenciais</a>.
 					</p>
 				</section>
@@ -140,22 +109,9 @@
 			</div>
 		</div>
 		<!-- Início do rodapé -->
-		<footer>
-			<div class="container">
-				<img src="img/logo-rodape.png" alt="Logo Mirror Fashion" />
-				<ul class="social">
-					<li>
-						<a href="http://facebook.com/mirrorfashion">Facebook</a>
-					</li>
-					<li>
-						<a href="http://twitter.com/mirrorfashion">Twitter</a>
-					</li>
-					<li>
-						<a href="http://plus.google.com/mirrorfashion">Google+</a>
-					</li>
-				</ul>
-			</div>
-		</footer>
+		<?php
+			include("rodape.php");
+		?>
 	</body>
 	<!-- Fim do body -->
 </html>
