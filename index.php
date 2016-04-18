@@ -1,17 +1,5 @@
-<html>
-	<head>
-		<title>Mirror Fashion</title>
-		
-		<meta name="viewport" content="width=device-width" />
-		
-		<link rel="stylesheet" href="css/reset.css" />
-		<link rel="stylesheet" href="css/estilos.css" />
-		<link rel="stylesheet" href="css/mobile.css" media="(max-width: 939px)" />
-		<meta charset="ansi">
-	</head>
-	<!-- Início do body -->
-	<body>
 		<?php
+			$cabecalho_title = "Mirror Fashion";
 			include("cabecalho.php");
 		?>
 		<!-- Início da seção principal -->

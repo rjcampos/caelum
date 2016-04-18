@@ -1,20 +1,5 @@
-<!DOCTYPE html>
-<html>
-	<!-- Início do head	-->
-	<head>
-		<meta charset="ansi">
-		<meta name="viewport" content="width=device-width" />
-		
-		<title>Sobre a Mirror Fashion</title>
-		<link rel="stylesheet" href="css/reset.css" />
-		<link rel="stylesheet" href="css/estilos.css" />
-		<link rel="stylesheet" href="css/sobre.css" />
-		<link rel="stylesheet" href="css/sobre_mobile.css" media="(max-width: 939px)" />
-	</head>
-	<!-- Fim do head -->
-	<!-- Início do body -->
-	<body>
 		<?php
+			$cabecalho_title = "Sobre a Mirror Fashion";
 			include("cabecalho.php");
 		?>
 		<div class="container">
