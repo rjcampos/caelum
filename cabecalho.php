@@ -22,7 +22,7 @@
 				<script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
 			<![endif]-->
 			<h1>
-				<img src="img/logo.png" alt="Mirror Fashion" />
+				<a href="index.php"><img src="img/logo.png" alt="Mirror Fashion" /></a>
 			</h1>
 			
 			<p class="sacola">Nenhum item na sacola de compras</p>
