@@ -5,10 +5,13 @@
 		?>
 		<div class="container">
 			<!-- Início da seção de produto -->
-			<div class="produto">
+			<div class="produto produto-back">
 				<h1>Fuzzy Cardigan</h1>
 				<p>por apenas R$129,00</p>
-				<form>
+				<form action="checkout.php" method="POST">
+					<input type="hidden" name="id" value="2" />
+					<input type="hidden" name="nome" value="Fuzzy Cardigan" />
+					<input type="hidden" name="preco" value="129.00" />
 					<fieldset class="cores">
 						<legend>Escolha a cor:</legend>
 						
@@ -78,6 +81,3 @@
 		<?php
 			include("rodape.php");
 		?>
-	</body>
-	<!-- Fim do body -->
-</html>

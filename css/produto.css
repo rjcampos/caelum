@@ -192,3 +192,9 @@ td:first-child{
 		font-size: 1.2em;
 	}
 }
+
+.produto-back{
+	background-color: #F2F2F2;
+	margin-top: 1em;
+	border-top: 2px solid #ccc;
+}

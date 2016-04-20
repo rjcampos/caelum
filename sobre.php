@@ -97,6 +97,3 @@
 		<?php
 			include("rodape.php");
 		?>
-	</body>
-	<!-- Fim do body -->
-</html>

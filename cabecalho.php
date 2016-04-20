@@ -15,7 +15,7 @@
 	</head>
 	<!-- Início do body -->
 	<body>
-<!-- Início do cabeçalho -->
+		<!-- Início do cabeçalho -->
 		<header class="container">
 			<!-- Script para fazer o HTML5 funcionar no IE8 -->
 			<!--[if lt IE 9]>
