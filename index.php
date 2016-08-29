@@ -1,3 +1,4 @@
+<!-- teste -->
 		<?php
 			$cabecalho_title = "Mirror Fashion";
 			include("cabecalho.php");
