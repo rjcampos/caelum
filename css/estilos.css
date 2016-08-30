@@ -208,6 +208,7 @@ footer .container{
 body{
 	color: #333333;
 	font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+	padding-top: 70px;
 }
 
 .menu-opcoes a:hover{
@@ -243,4 +244,8 @@ body{
 
 .form-control:invalid{
 	border: 1px solid #cc0000;
+}
+
+.navbar{
+	margin: 0;
 }
