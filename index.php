@@ -129,6 +129,7 @@
 							</a>
 						</li>
 					</ol>
+					<button type="button">Mostra mais</button>
 				</section>
 				<!-- Fim do painel de novidades -->
 				<!-- Início do painel de mais vendidos -->
@@ -184,6 +185,7 @@
 							</a>
 						</li>
 					</ol>
+					<button type="button">Mostra mais</button>
 				</section>
 				<!-- Fim do painel de mais vendidos -->
 			</div>

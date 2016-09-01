@@ -16,6 +16,9 @@
 			</div>
 		</footer>
 		<!-- Fim do rodapé -->
+		<script src="js/jquery.js"></script>
+		<script src="js/home.js"></script>
+		<script src="js/produto.js"></script>
 		<script src="js/banner.js"></script>
 	</body>
 	<!-- Fim do body -->
