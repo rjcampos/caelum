@@ -16,6 +16,7 @@
 			</div>
 		</footer>
 		<!-- Fim do rodapé -->
+		<script src="js/banner.js"></script>
 	</body>
 	<!-- Fim do body -->
 </html>

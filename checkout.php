@@ -66,7 +66,7 @@
 								</dd>
 								
 								<dt>Preço</dt>
-								<dd>
+								<dd id="preco">
 									<?php
 										print $_POST['preco'];
 									?>
@@ -86,6 +86,19 @@
 									?>
 								</dd>
 							</dl>
+							
+							<div class="form-group">
+								<label for="qt">Quantidade</label>
+								<input id="qt" class="form-control" type="number" min="0" max="99" value="1" />
+							</div>
+							<div class="form-group">
+								<label for="total">Total</label>
+								<output for="qt valor" id="total" class="form-control">
+									<?php
+										print $_POST['preco'];
+									?>
+								</output>
+							</div>
 						</div>
 					</div>
 					<!--Fim da div panel -->
@@ -161,5 +174,7 @@
 		<script src="js/jquery.js"></script>
 		<script src="js/bootstrap.js"></script>
 		<script src="js/converteMoeda.js"></script>
+		<script src="js/testaConversao.js"></script>
+		<script src="js/total.js"></script>
 	</body>
 </html>

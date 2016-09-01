@@ -63,6 +63,7 @@
 				</section>
 				<!-- Fim do menu de departamentos-->
 				<img src="img/destaque-home.png" alt="Promoção: Big City Nights" />
+				<img id="pause" src="img/pause.png" />
 			</div>
 		</section>
 		<!-- Fim dá seção principal -->
