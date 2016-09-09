@@ -24,6 +24,8 @@
 						<img src="img/centro-distribuicao.png" alt="Centro de distribuição da Mirror Fashion"/>
 						<figcaption>Centro de distribuição da Mirror Fashion</figcaption>
 					</figure>
+					
+					<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3961.30736608731!2d-35.49070578522149!3d-6.853712868956251!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x7adb41cd947b0e7%3A0x3999de50077072ef!2sTRT+Tribunal+Regional+do+Trabalho+13%C2%AA+Regi%C3%A3o!5e0!3m2!1spt-BR!2sbr!4v1473432972735" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
 
 					<p>
 						Compre suas roupas e acessórios na <strong>Mirror Fashion</strong>. Acesse <a href="index.php">nossa loja</a> ou entre em contato 
@@ -60,6 +62,8 @@
 						Brasil, há <strong>240 mil funcionários</strong>, além dos 890 mil brasileiros nas instalações de Jacarezinho e 
 						nos escritórios em todo país.
 					</p>
+					
+					<iframe width="560" height="315" src="https://www.youtube.com/embed/Tb06abHE4hY" frameborder="0" allowfullscreen></iframe>
 
 					<p>
 						Dada a importância econômica da empresa para o Brasil, a família Pelho já recebeu diversos prêmios, 

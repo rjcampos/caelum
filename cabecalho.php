@@ -8,6 +8,7 @@
 		<link rel="stylesheet" href="css/reset.css" />
 		<link rel="stylesheet" href="css/estilos.css" />
 		<link rel="stylesheet" href="css/mobile.css" media="(max-width: 939px)" />
+		<link rel="stylesheet" href="http://fonts.googleapis.com/css?family=PT+Sans|Bad+Script"  />
 		<?php 
 			print @$cabecalho_css;
 		?>
