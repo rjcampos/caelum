@@ -20,6 +20,7 @@
 		<script src="js/home.js"></script>
 		<script src="js/produto.js"></script>
 		<script src="js/banner.js"></script>
+		<script src="js/less-min.js"></script>
 	</body>
 	<!-- Fim do body -->
 </html>
