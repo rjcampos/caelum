@@ -1,33 +1,58 @@
 		<?php
-			$cabecalho_title = "Produto da Mirror Fashion";
+			$conexao = mysqli_connect("127.0.0.1", "root", "iamtno", "wd43");
+			$dados = mysqli_query($conexao, "SELECT * FROM produtos WHERE id = $_GET[id]");
+			$produto = mysqli_fetch_array($dados);
+		?>
+		<?php
+			$cabecalho_title = $produto['nome'];
 			$cabecalho_css = '<link rel="stylesheet" href="css/produto.css" />';
 			include("cabecalho.php");
 		?>
+		
 		<div class="container">
 			<!-- Início da seção de produto -->
 			<div class="produto produto-back">
-				<h1>Fuzzy Cardigan</h1>
-				<p>por apenas R$129,00</p>
+				<h1>
+					<?php
+						print $produto['nome'];
+					?>
+				</h1>
+				<p>
+					por apenas 
+					<?php
+						print $produto['preco'];
+					?>
+				</p>
 				<form action="checkout.php" method="POST">
-					<input type="hidden" name="id" value="2" />
-					<input type="hidden" name="nome" value="Fuzzy Cardigan" />
-					<input type="hidden" name="preco" value="R$ 129,00" />
+					<input type="hidden" name="id" value="<?= $produto['id'] ?>" />
 					<fieldset class="cores">
 						<legend>Escolha a cor:</legend>
 						
 						<input type="radio" name="cor" value="verde" id="verde" checked />
 						<label for="verde">
-							<img src="img/produtos/foto2-verde.png" alt="Produto na cor verde" />
+							<img src="img/produtos/foto
+							<?php
+								print $produto['id'];
+							?>
+							-verde.png" alt="Produto na cor verde" />
 						</label>
 						
 						<input type="radio" name="cor" value="rosa" id="rosa" />
 						<label for="rosa">
-							<img src="img/produtos/foto2-rosa.png" alt="Produto na cor rosa" />
+							<img src="img/produtos/foto
+							<?php
+								print $produto['id'];
+							?>
+							-rosa.png" alt="Produto na cor rosa" />
 						</label>
 						
 						<input type="radio" name="cor" value="azul" id="azul" />
 						<label for="azul">
-							<img src="img/produtos/foto2-azul.png" alt="Produto na cor azul" />
+							<img src="img/produtos/foto
+							<?php
+								print $produto['id'];
+							?>
+							-azul.png" alt="Produto na cor azul" />
 						</label>
 					</fieldset>
 					
@@ -44,9 +69,11 @@
 			<div class="detalhes">
 				<h2>Detalhes do produto</h2>
 				
-				<p>Esse é o melhor casaco de Cardigã que você já viu. 
-				Excelente material italiano com estampa desenhada pelos artesãos da comunidade de Krotor nas ilhas gregas. 
-				Compre já e receba hoje mesmo pela nossa entrega a jato.</p>
+				<p>
+					<?php
+						print $produto['descricao'];
+					?>
+				</p>
 				
 				<!-- Início da tabela de detalhes do produto -->
 				<table>

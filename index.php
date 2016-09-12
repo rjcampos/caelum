@@ -75,59 +75,24 @@
 				<section class="painel novidades">
 					<h2>Novidades</h2>
 					<ol>
-						<li>
-							<a href="#">
-								<figure>
-									<img src="img/produtos/miniatura1.png"
-									<figcaption>Produto 1</figcaption>
-								</figure>
-							</a>
-						</li>
-
-						<li>
-							<a href="#">
-								<figure>
-									<img src="img/produtos/miniatura2.png"
-									<figcaption>Produto 2</figcaption>
-								</figure>
-							</a>
-						</li>
+						<?php
+							$conexao = mysqli_connect("127.0.0.1", "root", "iamtno", "wd43");
+							$dados = mysqli_query($conexao, "SELECT * FROM produtos ORDER BY data DESC LIMIT 0, 12");
+							while ($produto = mysqli_fetch_array($dados)):
+						?>
 						
 						<li>
-							<a href="#">
+							<a href="produto.php?id=<?= $produto['id'] ?>">
 								<figure>
-									<img src="img/produtos/miniatura3.png"
-									<figcaption>Produto 3</figcaption>
+									<img src="img/produtos/miniatura<?= $produto['id'] ?>.png" alt="<?= $produto['nome'] ?>">
+									<figcaption><?= $produto['nome'] ?> por <?= $produto['preco'] ?></figcaption>
 								</figure>
 							</a>
-						</li>
+					  </li>
 						
-						<li>
-							<a href="#">
-								<figure>
-									<img src="img/produtos/miniatura4.png"
-									<figcaption>Produto 4</figcaption>
-								</figure>
-							</a>
-						</li>
-						
-						<li>
-							<a href="#">
-								<figure>
-									<img src="img/produtos/miniatura5.png"
-									<figcaption>Produto 5</figcaption>
-								</figure>
-							</a>
-						</li>
-						
-						<li>
-							<a href="#">
-								<figure>
-									<img src="img/produtos/miniatura6.png"
-									<figcaption>Produto 6</figcaption>
-								</figure>
-							</a>
-						</li>
+						<?php
+							endwhile;
+						?>
 					</ol>
 					<button type="button">Mostra mais</button>
 				</section>
@@ -136,54 +101,23 @@
 				<section class="painel mais-vendidos">
 					<h2>Mais Vendidos</h2>
 					<ol>
+						<?php
+							$dados = mysqli_query($conexao, "SELECT * FROM produtos ORDER BY vendas DESC LIMIT 0, 12");
+							while ($produto = mysqli_fetch_array($dados)):
+						?>
+						
 						<li>
-							<a href="#">
+							<a href="produto.php?id=<?= $produto['id'] ?>">
 								<figure>
-									<img src="img/produtos/miniatura7.png"
-									<figcaption>Produto 7</figcaption>
+									<img src="img/produtos/miniatura<?= $produto['id'] ?>.png" alt="<?= $produto['nome'] ?>">
+									<figcaption><?= $produto['nome'] ?> por <?= $produto['preco'] ?></figcaption>
 								</figure>
 							</a>
 						</li>
-						<li>
-							<a href="#">
-								<figure>
-									<img src="img/produtos/miniatura8.png"
-									<figcaption>Produto 8</figcaption>
-								</figure>
-							</a>
-						</li>
-						<li>
-							<a href="#">
-								<figure>
-									<img src="img/produtos/miniatura9.png"
-									<figcaption>Produto 9</figcaption>
-								</figure>
-							</a>
-						</li>
-						<li>
-							<a href="#">
-								<figure>
-									<img src="img/produtos/miniatura10.png"
-									<figcaption>Produto 10</figcaption>
-								</figure>
-							</a>
-						</li>
-						<li>
-							<a href="#">
-								<figure>
-									<img src="img/produtos/miniatura11.png"
-									<figcaption>Produto 11</figcaption>
-								</figure>
-							</a>
-						</li>
-						<li>
-							<a href="#">
-								<figure>
-									<img src="img/produtos/miniatura12.png"
-									<figcaption>Produto 12</figcaption>
-								</figure>
-							</a>
-						</li>
+						
+						<?php
+							endwhile;
+						?>
 					</ol>
 					<button type="button">Mostra mais</button>
 				</section>

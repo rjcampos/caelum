@@ -8,6 +8,11 @@
 		<title>Checkout Mirror Fashion</title>
 	</head>
 	<body>
+		<?php
+			$conexao = mysqli_connect("127.0.0.1", "root", "iamtno", "wd43");
+			$dados = mysqli_query($conexao, "SELECT * FROM produtos WHERE id = $_POST[id]");
+			$produto = mysqli_fetch_array($dados);
+		?>
 		<nav class="navbar navbar-inverse navbar-fixed-top">
 			<div class="navbar-header">
 				<a class="navbar-brand" href="index.php">
@@ -61,14 +66,14 @@
 								<dt>Produto</dt>
 								<dd>
 									<?php
-										print $_POST['nome'];
+										print $produto['nome'];
 									?>
 								</dd>
 								
 								<dt>Preço</dt>
 								<dd id="preco">
 									<?php
-										print $_POST['preco'];
+										print $produto['preco'];
 									?>
 								</dd>
 								
@@ -95,7 +100,7 @@
 								<label for="total">Total</label>
 								<output for="qt valor" id="total" class="form-control">
 									<?php
-										print $_POST['preco'];
+										print $produto['preco'];
 									?>
 								</output>
 							</div>
